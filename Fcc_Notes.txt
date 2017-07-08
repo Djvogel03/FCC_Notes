@@ -1,0 +1,32 @@
+<p> - preferred element for normal-sized paragraph text
+
+<!--""""--> - Comments
+
+style - way to change elements characteristics...
+
+'color:' - is what controls text color
+
+'font-size:' - 
+
+'font-family:' - 
+
+ex> <h2 style="color:blue">CatPhotoApp</h2>
+
+W/ CSS properties, hundreds of props that you can change...
+
+Can create a <style></style> at top of code and can create CSS selector for all elements w/ specific tag
+
+Ex> 
+
+<style>
+	h2 {color:red;}
+</style>
+
+CSS Class to style an element (reusable styles that can be added to HTML elements.)
+
+Class designation = .example-text {color: blue;}
+
+then use as...
+
+<h2 class="example-text">CatPhotoApp</h2>
+
