@@ -1,3 +1,6 @@
+HTML
+-opening and closing tags (<h1> </h1>) (h1-h6)
+
 <p> - preferred element for normal-sized paragraph text
 
 <!--""""--> - Comments
@@ -20,6 +23,7 @@ Ex>
 
 <style>
 	h2 {color:red;}
+	.example-text {color:red;}
 </style>
 
 CSS Class to style an element (reusable styles that can be added to HTML elements.)
@@ -30,3 +34,46 @@ then use as...
 
 <h2 class="example-text">CatPhotoApp</h2>
 
+Can import font from Google...(need to link @ top of main.html or CSS docs)
+-Then  either add to class, element, etc in style section...
+
+Several fonts avail in all browsers:
+(Monospace, Serif, Sans-Serif)
+
+In styling, you can add instructions on how to fonts should depreciate by seperating them by a ',' before the ';'...
+
+Can add Images to your Website....
+-Do w/ 'img' element and point to 'src'
+
+Ex>
+
+<img src="https://www.your-image-source.com/your-image.jpg" alt="text about what your image is.">
+
+-all img elements must have an 'alt' attribute which is used for screen readers to improve accessibility and is displaying if the image fails to load
+
+CSS w/ a property 'width' (defined w/ 'px')
+	-Used w/ images...
+
+CSS borders (border-style, border-color, border-width, border-radius)
+	-can define border-radius w/ px or %
+
+Link to external pages w/ Anchor Elements
+
+Ex>
+<p>Normal text<a href='...link to external page...'>the links text</a>remainder of normal text</p>
+
+Can do the same thing w/ images by wrapping them in <a> tags...
+
+Bulleted Unorder/Ordered Lists
+
+<ul> = Unordered list
+
+<ol> = Ordered list
+
+<li> = list items
+
+Creating a Web Form
+
+<input type="text">
+
+-Note: input elements are self-closing
