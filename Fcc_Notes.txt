@@ -72,8 +72,81 @@ Bulleted Unorder/Ordered Lists
 
 <li> = list items
 
-Creating a Web Form
+Creating a Web Form (inc. place holder)
 
-<input type="text">
+<input type="text" placeholder="this is placeholder text">
 
 -Note: input elements are self-closing
+
+Can build web froms that sub data to server w/ pure html...
+
+<form action="/url-where-you-want-to-submit-form-data"></form>
+	-wrap this around next text fields w/in
+
+Adding a Submit Button
+-clicking will send the data from your form to the URL specified in 'action' tag
+-inc. inside the form tags
+
+<button type="submit">this button submits the form</button>
+
+
+Use HTML5 to Require a field
+-can make a field required...
+
+<input type="text" required>
+
+Create Radio Buttons
+-type of input
+-each of btns should be nested w/in 'label' element
+-all related shoud have same 'name' attrib
+
+<label><input type="radio" name="indoor-outdoor">Indoor</label>
+
+Create Check Boxes
+-type of input
+-for ?s may have more 1 answer
+-each need be nested w/in 'label' element
+-all related should have same 'name' attrib
+
+<label><input type="checkbox" name="personality">Loving</label>
+
+Make Default
+-can set as default w/ 'checked' attrib inside input element
+
+<input type="radio" name="test-name" checked>
+
+Nest many Elements w/in single Div element
+-division element
+-general purpose container for other elements
+-useful for passing CSS of its own class declar down to all elements w/in
+
+CSS for Background Color  (background-color)
+
+ID of an Element
+-in add to classes, can have 'id' element
+-should be unique (bp)
+
+<h2 id="cat-photo-app">
+
+-can be used to style w/ CSS
+
+#cat-photo-element{
+	background-color:green;
+}
+
+HTML Styling
+-3 properties control space that surrounds HTML element
+
+-padding- controls amt space b/t element & border
+-margin- controls amt space b/t elements border and surrounding elements --negative values make element grow larger
+-border-
+
+*can customize elem. so w/ diff padding on each side
+-padding-top, padding-right, padding-bottom, padding-left
+
+*can do same thing w/ margins (margin-top, margin-right, margin-bottom, margin-left)
+
+Use Clockwise Notation to specify padding
+padding: 10px 20px 10px 20px;
+
+*can do same thing w/ margins...
