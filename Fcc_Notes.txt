@@ -148,5 +148,23 @@ HTML Styling
 
 Use Clockwise Notation to specify padding
 padding: 10px 20px 10px 20px;
-
 *can do same thing w/ margins...
+
+CSS Inheritance
+-every HTML page has a 'body' element
+-all your elements w/in body, will inherit 'body' element's styles
+-if class, etc assigned to an element, it will override the 'body' style assigned
+-can override classes w/ other classes... 'class= "pink-text blue-text"'
+	-blue text will be the one applied
+-can also override classes w/ ids(#)
+-can override class declar w/ Inline styles
+-can use '!important' to override all other styles (add to element in <Style> section)
+
+HEX Codes for Colors (and other options...)
+-uses 0-9 and A-F (uses 6 hexadecimal digits to rep colors; 2 each for R,G,B)
+- 'background-color: #000000'
+-can use abbrev HEX codes too
+-can use RGB values
+-written as rgb(255, 255, 255)
+
+Using Responsive Design Boostrap Fluid Containers...
