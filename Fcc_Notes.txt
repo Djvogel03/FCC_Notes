@@ -181,3 +181,32 @@ Using Responsive Design Boostrap Fluid Containers...
 Bootstrap Buttons...
 -BS w/ own styles for 'button' elements
 -class = 'btn'
+-<button types="button|submit|reset">
+-usu. button elem w/ class 'btn' only as big as text w/in
+	-w/ class 'btn-block' your button will stretch to fill pages entire horz space
+	-still need the 'btn' class
+-classes that conrtol color of buttons
+	-'btn-primary'  (blueish - darker)
+	-'btn-info' (light blueish)
+	-'btn-danger' (red)
+
+Bootstrap Grid...
+-BS uses responsive grid make easy put elem into rows, specify elem width (based on 12 total)
+-most BS classes can be applied to <div> element (ex> col-med-*)
+	-xs (for phones)
+	-sm (for tablets)
+	-md (for desktops)
+	-lg (for lg desktops)
+
+-so 1 <div class='row'>
+	-then elem inside w/in <div class='col-xs-4'>
+	-then all will be w/in same "row"
+
+
+Using Bootstraps CSS
+-BS provides built in styles
+
+Use Spans for inline elements
+
+
+
