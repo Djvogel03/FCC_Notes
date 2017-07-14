@@ -168,3 +168,16 @@ HEX Codes for Colors (and other options...)
 -written as rgb(255, 255, 255)
 
 Using Responsive Design Boostrap Fluid Containers...
+-BS will figure how wide your screen is & respond by resizing ur HTML elem.  (Responsive design)
+-can add BS to any app w/ this @ top of HTML
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+-encase stuff in <div class="container-fluid"></div>
+
+-can make image responsive/width of screen...
+-do w/ class="img-responsive"
+
+-center text w/ class="text-center"
+
+Bootstrap Buttons...
+-BS w/ own styles for 'button' elements
+-class = 'btn'
