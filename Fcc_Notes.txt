@@ -189,6 +189,7 @@ Bootstrap Buttons...
 	-'btn-primary'  (blueish - darker)
 	-'btn-info' (light blueish)
 	-'btn-danger' (red)
+-BS has class called 'btn-default'
 
 Bootstrap Grid...
 -BS uses responsive grid make easy put elem into rows, specify elem width (based on 12 total)
@@ -207,6 +208,22 @@ Using Bootstraps CSS
 -BS provides built in styles
 
 Use Spans for inline elements
+-w/ span element, can put several elem together & style diff parts of same elem differently
+-Ex> '<p>Things cats <span class= "text-danger">love</span>:</p>''
 
+Add Fond Awesome Icons to Buttons
+-Font Awesome is library of icons (vector icons in .svg format)
+-Icons treated just like fonts (size w/ pixels)
+-add the Font Awesome classes to the 'i' elem to turn into icon
+-Ex> '<i class="fa fa-info-circle"></i>'
 
+Responsively Style Radio Buttons
+-Can use BS col-xs-* class on form elements too
+-Nest all w/in <div class="row">, then each individual elem in <div class="col-xs-*">
 
+Bootstrap Wells
+-BS has class called 'well' that can create visual sense of depth for columns
+
+Create Class to target w/ jQuery Selectors
+-not every class needs corresp CSS
+-can use for purpose of seleting elements more easily w/ jQ
