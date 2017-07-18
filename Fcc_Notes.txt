@@ -227,3 +227,84 @@ Bootstrap Wells
 Create Class to target w/ jQuery Selectors
 -not every class needs corresp CSS
 -can use for purpose of seleting elements more easily w/ jQ
+
+
+jQuery Stuff
+- <script></script> at the top of doc
+-browser will run any JS in this element
+-document.ready stuff
+	$(document).ready(function() {
+
+	});
+	-code you put in this fcn will run as soon as your broswer has loaded the page
+	-important b/c w/o your 'document ready function' your code may run before your HTML is rendered (result in bugs)
+-all jQ fcns start w/ '$'
+-jQ often selects an HTML elem w/ a 'selector' that does something to that elem
+-for example, w/in $(document).ready(function())
+	$("button").addClass("animated bounce");  -- make all button bounce on load...
+	-using jQ to apply Animate.css 'bounce' to 'button' elem
+
+Target Elem by Class w/ jQ
+-selected elem w/ $("button")
+-added classes to them w/ .addClass("animated bounce");
+ex>  $(".well").addClass("animated shake");
+
+Target Elem by ID w/ jQ
+-$("#target3").addClass("animated fadeOut");
+
+Target same Elem w/ mult. jQ Selectors
+-3 ways of targeting element (by type, by class, by id)
+
+Remove Classes from Elem w/ jQ
+-can also remove classes w/ .removeClass()
+
+Change CSS of Elem w/ jQ
+-using jQ fcn '.css()'
+ex> $("#target1").css("color", "blue");
+
+Disable an Elem w/ jQ
+-can change non-CSS properties of HTML elem.
+-using jQ fcn '.prop()' - adjust properties of elem...
+ex> $("button").prop("disabled", true);
+
+Change Text inside an Elem w/ jQ
+-can change text b/t start/close tags
+-using jQ fcn '.html()' - lets you add HTML tags and text w/in an elem
+-any content there prev will be replaced
+ex> $("h3").html("<em>jQuery Playground</em>");
+-also w/ '.text()' jQ fcn - allow alter test w/o adding tags
+
+Remove an Elem w/ jQ
+-using jQ fcn '.remove()' - remove HTML elem entirely
+ex> $("#target4").remove()
+
+Use 'appendTo' to Move Elem. w/ jQ
+-using jQ fcn '.appendTo()' - select HTML elem and append to another element
+ex> $("#target4").appendTo("#left-well");
+
+Clone an Elem w/ jQ
+-can oply elem from one place to another
+-using jQ fcn '.clone()' - makes a copy of an elem
+ex> $("#target2").clone().appendTo("#right-well");
+			-->>funtion chaining...
+
+Target Parent of an Elem w/ jQ
+-every HTML elem w/ a 'parent' from which it 'inherits' properties
+-using jQ fcn '.parent()' - access to parent of whichever elem you've selected
+ex> $("left-well").parent().css("background-color", "blue");
+
+Target Childern of an Elem w/ jQ
+-many HTML elem w/ 'Childern' that 'inherit' properties from their parent
+-using jQ fcn '.childern()' - access to childern of whichever elem you've selected
+ex> $("#left-well").childern().css("color", "blue");
+
+Target Specific Child of an Elem w/ jQ
+-now you've seen benefits of '#id', but won't always have ids
+-jQ uses CSS Selectors to target elem  'target:nth-child(n)' - allos you to select all the nth elem w/ target class or elem type
+ex> $(".target:nth-child(3)").addClass("animated bounce");
+-can do same as above, but select all even/odd/formula to apply to...
+
+Use jQ to Modify the Entire Page
+-jQ can target 'body' elem as well
+-make entire body fade out
+	ex> $("body").addClass("animated fadeOut");
