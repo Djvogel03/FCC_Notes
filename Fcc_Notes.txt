@@ -19,7 +19,7 @@ W/ CSS properties, hundreds of props that you can change...
 
 Can create a <style></style> at top of code and can create CSS selector for all elements w/ specific tag
 
-Ex> 
+Ex> cd 
 
 <style>
 	h2 {color:red;}
@@ -308,3 +308,38 @@ Use jQ to Modify the Entire Page
 -jQ can target 'body' elem as well
 -make entire body fade out
 	ex> $("body").addClass("animated fadeOut");
+
+
+
+
+<--------------JAVASCRIPT------------>
+
+
+//  - Inline comments
+
+/* use this for multiline comments */
+
+JS datatypes = undefined, null, boolean, string, symbol, number, object
+
+Variables - allow computers to store and manip data in dynameic fashion
+
+var ourName;  (creates a variable called 'ourName')
+-No spaces or start w/ number
+
+Store a value in variable w/ 'assignment' operator of '='
+
+-When JS var are declared, they ahve initial value of 'undefined'
+-trying math oper on 'undefined' will result in NaN (not a number) 
+-trying to concant string and 'undefined' result in "undefined"
+-write vars in camelCase
+
+-Can easily 'increment' or add 1 to a var w/ the ++ operator (i++;)
+-Can easily 'decreemnt' or sub 1 from a var w/ the -- operator (i--;)
+
+-'remainder' operator is % (i.e 5 % 2 = 1)
+	-Use to check if number is odd or even
+
+-Using augmented addition/subtraction/multiplication/division
+- '+=' and '-=' and '*=' and '/='
+
+-Escape a quote w/ '\' in front of quote (ex> "Don said \'That's how we do it!\'")
