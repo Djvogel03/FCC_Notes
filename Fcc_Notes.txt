@@ -343,3 +343,22 @@ Store a value in variable w/ 'assignment' operator of '='
 - '+=' and '-=' and '*=' and '/='
 
 -Escape a quote w/ '\' in front of quote (ex> "Don said \'That's how we do it!\'")
+
+-Quotes aren't only chara that can be 'escaped'
+
+\' - single quote
+\" - double quote
+\\ - backslash
+\n - newline
+\r - carriage return
+\t - tab
+\b - backspace
+\f - form feed
+
+ex> var myStr = "FirstLine\n\\SecondLine\\\rThirdLine";  - this would return
+
+FirstLine
+\SecondLine\
+ThirdLine
+
+
