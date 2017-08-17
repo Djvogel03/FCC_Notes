@@ -362,3 +362,17 @@ FirstLine
 ThirdLine
 
 
+-Can concant strings w/ the '+' operator, as well as the +=...
+
+-Find length of a string = .length
+	ex> firstName.length
+
+Use Bracket Notation to Find the First Chara in a String
+-way to get a chara at specific 'index'
+
+String Immutablility
+-in JS, string values are 'immutable' -- cannot be altered once created (need to reassign variable...)
+
+Use Bracket Notation to Find the Last Chara in a String or Nth to last chara
+ex> firstName[firstName.length - 1]
+ex>firstName[firstName.length - 3]
