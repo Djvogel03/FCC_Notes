@@ -376,3 +376,13 @@ String Immutablility
 Use Bracket Notation to Find the Last Chara in a String or Nth to last chara
 ex> firstName[firstName.length - 1]
 ex>firstName[firstName.length - 3]
+
+Store Mult Values in One Var w/ Arrays
+-start arrays w/ '[' and end w/ ']'
+-you can nest arrays w/in one another... (nested arrays or 'multi-dimensional array')
+ex> [['Bulls', 23], ['White Sox','45']]
+-access array data w/ indexes...
+ex> array[0] will return the first value in an array
+-can modify array data in the same way
+ex> ourArray[0] = 'NewData'
+-access multi-dimensional arrays in the same way w/ indexes (ourArray[0][1])
