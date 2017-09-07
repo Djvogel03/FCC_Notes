@@ -386,3 +386,47 @@ ex> array[0] will return the first value in an array
 -can modify array data in the same way
 ex> ourArray[0] = 'NewData'
 -access multi-dimensional arrays in the same way w/ indexes (ourArray[0][1])
+
+Manip Arrays w/ Push
+-append data to end of array w/ .push()
+ex> var arr = [1,2,3];
+	arr.push(4);
+	// arr is now [1,2,3,4]
+
+Manip Arrays w/ Pop
+-'pop' a value off the end of an array w/ .pop() (always last value)
+-can store popped value  by assigning to var
+ex> var oneDown = [1,4,6].pop()
+	//oneDown now = 6 and array = [1,4] 
+
+Manip Arrays w/ Shift
+-works like pop(), but removes the first element
+
+Manip Arrays w/ Unshift
+-add elements in front of the array w/ .unshift('add')
+
+
+Write reusable JS w/ Functions
+-divide code into reusable parts called 'functions'
+ex>
+
+function functionName(){
+	console.log('Hello World');
+}
+
+-you can call or 'invoke' this fcn by using it's name followed by parentheses...
+	--> functionName();
+
+Pass values to Fcns w/ Arguments...
+-'Parameters' are vars that act as placeholder for the values that are to be input to a fcn when called...
+ex> 
+
+function testFun(param1, param2) {
+	console.log(param1, param2);
+}
+
+Global Scope and Functions
+-'scope' refers to the visibility of var
+-Vars defined outside of fcn block have 'Global' scope
+-Variables which are used w/o the 'var' keyword are automatically created in the 'global' scope
+	-Can cause issues, always declare variables w/ 'var'
