@@ -430,3 +430,48 @@ Global Scope and Functions
 -Vars defined outside of fcn block have 'Global' scope
 -Variables which are used w/o the 'var' keyword are automatically created in the 'global' scope
 	-Can cause issues, always declare variables w/ 'var'
+
+Local Scope and Functions
+-Vars declared w/in a fcn & fcn param only w/ Local scope
+
+
+**It's possible to have Local and Global var w/ same name.  When you do this, Local takes precedence over Global...
+
+Using 'Return' to get value from a Fcn
+-use 'return' statement to send a value back out of fcn
+-can assign a returned value (from a fcn) to a var
+
+
+-In CS, a 'queue' is an abstract Data Structure where items are kept in order.
+-New items can be added to the back and old items taken off the front
+
+
+Understanding Boolean Values
+-'true' and 'false'
+
+Use Conditional Logic w/ If Statements
+-used to make decisions
+-'if' tell JS to executre code in curly braces under certain cond, defined in the parentheses...
+-these conditions known as Boolean cond..
+	-can only be true or false
+	-if true, then executed, if false, then not...
+
+syntax>
+
+if (condition is true) {
+	//code to be executed
+}
+
+Comparison w/ Equality Operator
+-many diff 'comparison operators'
+-all return a true or false
+- '==' is equality operator
+- '===' is strict equality operator (datatype checked too)
+- '!=' is inequality
+- '!==' is strict inequality
+- '>' is greater than
+- '>=' is greater than or equal to
+- '<' is less than
+- '<=' is less than or equal to
+- '&&' is and operator
+- '||' is or operator
