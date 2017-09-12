@@ -524,3 +524,53 @@ switch (num) {
   default:
     defaultStatement;
 }
+
+-can also use following syntax if you have multiple 'cases' w/ same output...
+
+ex>
+
+switch(val) {
+    case 1:
+    case 2:
+    case 3:
+        result = "1,2, or 3";
+	break;
+    case 4:
+        result = '4 alone';
+}
+
+Feturning Boolean Values from Fcns
+-common 'anti-pattern' is to use if/else statement to do a comparison, then return 'true' or 'false'
+-since '===' reutrns true or false, we can do comparisons like:
+
+function isEqual(a,b) {
+    return a === b;
+}
+
+Return Early Pattern for Functions
+-When 'return' is reached, execution of current fcn stops and control returns to calling location
+
+Build JavaScript Objects
+-Obj similar to 'arrays' except instead of using indexes to access & mod data, you access data w/ 'properties'
+-Useful for storing data in structured way & can represent real world objects...
+ex>
+
+var cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
+
+Accessing Obj properties w/ dot operator
+-2 ways to access the properties of an object
+	1) the dot operator (.)  - used when know the name of the property your trying to access ahead of time
+	ex> 
+	var myObj = {
+  	  prop1: "val1",
+  	  prop2: "val2"
+	};
+	var prop1val = myObj.prop1; // val1
+	var prop2val = myObj.prop2; // val2
+	
+	2) bracket notation ([])
