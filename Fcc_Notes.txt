@@ -573,4 +573,39 @@ Accessing Obj properties w/ dot operator
 	var prop1val = myObj.prop1; // val1
 	var prop2val = myObj.prop2; // val2
 	
-	2) bracket notation ([])
+	2) bracket notation ([])  - need to use if property of obj has a space in it
+	  - Note: property names w/ spaces in them must be in quotes
+	ex>
+	var myObj = {
+  	  "Space Name": "Kirk",
+  	  "More Space": "Spock"
+	};
+	myObj["Space Name"]; // Kirk
+	myObj['More Space']; // Spock
+
+
+Accessing Obj properties w/ Variables
+-another use for bracket notation is to use a variable to access a property
+-useful for iterating through lists of the obj prop for for look up needs
+
+ex>
+var someProp= "propName";
+var myObj= {
+	propName: "Some Value";
+}
+myObj[someProp]; // "Some Value"
+
+ex>
+var myDog = 'Hunter';
+var dogs = {
+	Fido: "Mutt",
+	Hunter: "Doberman",
+	Snoopie: "Beagle"
+}
+var breed = dogs[myDog];
+console.log(breed); // "Doberman"
+
+-Note: do NOT use quotes around the var name when using it to access the property b/c we are using the value of the variable, not the name
+
+
+
