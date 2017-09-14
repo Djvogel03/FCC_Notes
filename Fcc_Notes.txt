@@ -608,4 +608,28 @@ console.log(breed); // "Doberman"
 -Note: do NOT use quotes around the var name when using it to access the property b/c we are using the value of the variable, not the name
 
 
+Updating Object Props
+-after obj been created, can update the prop...
+-can use dot or bracket notation
+ex>
+	ourDog.name = 'Happy Camper';
+	outDog["name"] = 'Happy Camper';
 
+Add New Props to JS obj
+-can add new prop, same way you modify props
+-use either bracket or dot notation
+
+Delete Props from JS obj
+- use following syntax
+
+delete myObj.prop;
+
+Using obj for lookups
+-think of obj as key/value storage
+-most useful when know input data is limited to certain range
+
+Testing Obj for Props
+-useful to check if prop of given obj exists
+-can use the:
+	.hasOwnProperty(propname) method of objs to determine if obj has given prop name
+	-will return true or false
