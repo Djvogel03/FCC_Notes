@@ -633,3 +633,75 @@ Testing Obj for Props
 -can use the:
 	.hasOwnProperty(propname) method of objs to determine if obj has given prop name
 	-will return true or false
+
+Manip Complex Objs
+-Sometimes you want store data in flex 'data structure'
+-allow for arbitrary combo of strings, number, booleans, arrays, fcns, objs
+
+ex>  this is an array w/ one obj inside
+
+var ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP" ],
+    "gold": true
+  }
+];
+
+-if you want to add more album records, you can do by adding records to the top level array
+-JSON is a related data interchange format used to store data
+-Note: need to put comma after each object in the array
+
+Accessing Nested Obj
+-sub-props of objs can be acces by chaining together the dot or bracket notation
+
+ex> 
+
+var ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+ourStorage.desk.drawer; // "stapler"
+
+Accessing Nested Arrays
+-similar to accessing nested obs, array bracket notation can be used
+
+ex>
+
+var ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+ourPets[0].names[1]; // "Fluffy"
+ourPets[1].names[0]; // "Spot"
+
+Iterate w/ JS for Loops
+-
