@@ -718,3 +718,51 @@ for ([initialization]; [condition]; final-expression])
 
 -'final-expression' = executed @ end of each loop iter prior to next 'condition' check
 	-usu used to increment or decrement loop counter
+
+ex>
+
+var ourArray=[]
+for (var i = 0; i < 5; i++) {
+	ourArray.push(i);
+}
+
+now ourArray = [0,1,2,3,4];
+
+-Note: for loops don't have to iter one @ a time, can count by even or odd num too, just need to change 'final-expression'
+
+Count Backwards w/ a For Loop
+-need to change the initialization condition and final-expression
+
+ex>
+
+var ourArray = [];
+for (var i=10; i > 0; i-=2) {
+  ourArray.push(i);
+}
+
+Iterate Through array w/ For Loop
+-One way to do is w/ For Loop
+
+ex>
+
+var arr = [10,9,8,7,6];
+for (var i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
+}
+
+Nesting For Loops
+-oft used w/ multi-dimensional array
+
+ex>
+
+var arr = [
+  [1,2], [3,4], [5,6]
+];
+for (var i=0; i < arr.length; i++) {
+  for (var j=0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+
+*This will output each sub-elemt in arr one at a time
+*Note in inner lopo, checking the length of arr[i], since it is an array
