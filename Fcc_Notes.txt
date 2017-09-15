@@ -704,4 +704,17 @@ ourPets[0].names[1]; // "Fluffy"
 ourPets[1].names[0]; // "Spot"
 
 Iterate w/ JS for Loops
--
+-run same code multiple times w/ loops
+-most common is a 'for loop'
+	-runs specific # of times
+-run w/ 3 optional expressions sep by ;
+
+for ([initialization]; [condition]; final-expression])
+
+-'initialization' = executed one time only before loop starts
+	-define and setup loop var
+
+-'condition' = evaluated at begin every loop iter and cont as long as = true; when false, loop stops executing
+
+-'final-expression' = executed @ end of each loop iter prior to next 'condition' check
+	-usu used to increment or decrement loop counter
