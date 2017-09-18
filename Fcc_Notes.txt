@@ -765,4 +765,17 @@ for (var i=0; i < arr.length; i++) {
 }
 
 *This will output each sub-elemt in arr one at a time
-*Note in inner lopo, checking the length of arr[i], since it is an array
+*Note in inner loop, checking the length of arr[i], since it is an array
+
+
+Iterate w/ JS WHILE loops
+-runs 'while' a specific condition is 'true'
+
+ex>
+
+var ourArray=[];
+var i = 0;
+while (i < 5) {
+	ourArray.push(i);
+	i++;
+}
