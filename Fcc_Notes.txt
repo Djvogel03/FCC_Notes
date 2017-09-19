@@ -779,3 +779,93 @@ while (i < 5) {
 	ourArray.push(i);
 	i++;
 }
+
+Generate Random Fractions w/ JS
+-random nums are useful for createing random behavior
+-JS w/ Math.random() fcn that generate a random decimal b/c 0(inclusive) and 1(exclusive)
+
+Generate Random Whole Numbers w/ JS
+-Math.random * 20 and Math.floor() to round down, will give #s b/t 0-19
+
+Generate Random Whole Numbers w/in a range
+-can generate a random number that falls w/in a range of 2 specific numbers
+-to do this, we'll define a min and max #s
+
+Math.floor(Math.random() * (max-min+1)) + min
+
+Sift through text w/ Regular Expressions
+-RE used to find certain words, patterns in strings
+-regular expression: /the/gi
+
+/ = start of RE
+the = pattern we want to match
+/ = end of RE
+g = global = causes the pattern to return all matched in the string, not just 1st
+i = means ingnore the case when searchin for pattern
+
+ex>
+
+var testString = 'Ada LoveLace and Charles Babbage designed the first computer and the software that would have run on it.';
+
+var expression = /and/gi;
+
+var andCount = testString.match(expression).length;
+
+Finding Numbers w/ REs
+-can use special selectors in REs to select a particular type of value
+\d = digit selectro (used to retrieve one digit (0-9) in a string)
+ex> /\d/g (if you add a '+' after selector (/\d+/g) allows this regular expression to match one or more digits
+
+Find whitespace w/ REs
+-other RE selectors that can be used
+\s = whitespace in a string
+' ' = space
+\r = carriage return
+\n = newline
+\t = tab
+\f = form feed
+
+Invert RE Matches w/ JS
+-you can invert any match by suing the uppercase of the RE selector
+-so, \s will match any whitespace and \S will match anything that isn't whitespace
+
+Construct JS Objs w/ Fcns
+-can create Objs w/ 'constructor' functions
+-'constructor' fcns are given a Capitalized name to make obv what they are
+
+ex>
+
+Var Car = function() {
+	this.wheels = 4;
+	this.engines = 1;
+	this.seats = 5;
+};
+
+-'this' refers to the new obj being created by constructor
+
+Make instances of Objs w/ a Constructor Fcn
+-to use a constructor fcn, we call it w/ the 'new' keyword in front
+
+ex> var myCar = new Car();
+*myCar is now an 'instance' of the 'Car' constructor (w/ all prop of 'Car')
+
+
+Make unique Objs by Passing Param to our Constructor
+-what if don't always want to create the same obj...
+-can add 'parameters' to our 'constructor'
+
+ex>
+
+var Car = function(wheels, seats, engines) {
+	this.wheels = wheels;
+	this.seats = seats;
+	this.engines = engines;
+}
+
+create ex> var myCar = new Car(6,3,1);
+
+Make Obj Properties Private
+-Objs have own attributes (Properties) and their own fcns (Methods)
+-can create 'private properties' and 'private methods' which aren't accessible from outside the object
+-to do, create the variable inside the 'constructor' using the var keyword (instead of created as a property of 'this')
+-useful for when we need to store info abt an obj, but want to control how its used by outside code...
