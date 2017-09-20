@@ -869,3 +869,27 @@ Make Obj Properties Private
 -can create 'private properties' and 'private methods' which aren't accessible from outside the object
 -to do, create the variable inside the 'constructor' using the var keyword (instead of created as a property of 'this')
 -useful for when we need to store info abt an obj, but want to control how its used by outside code...
+-ex> say want to store 'speed' car is traveling, but onl want outside code to be able to mod by accerating or decelrating, so speed changes in controlled way...
+
+ex>
+
+var Car = function() {
+  // this is a private variable
+  var speed = 10;
+
+  // these are public methods
+  this.accelerate = function(change) {
+    speed += change;
+  };
+
+  this.decelerate = function() {
+    speed -= 5;
+  };
+
+  this.getSpeed = function() {
+    return speed;
+  };
+};
+
+Iterate over Arrays w/ Map
+-'map' method is convenient way to iterate through arrays
