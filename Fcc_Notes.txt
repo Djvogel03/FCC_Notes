@@ -893,3 +893,18 @@ var Car = function() {
 
 Iterate over Arrays w/ Map
 -'map' method is convenient way to iterate through arrays
+-will iterate through every elem of array, reate a new array w/ vals modified by the callback fcn and return it
+-note: doesn't modify original array...
+
+ex> 
+
+var oldArray = [1,2,3];
+var timesFour = oldArray.map(function(val) {
+	return val * 4;
+});
+console.log(timesFour); // returns [4,8,12]
+console.log(oldArray); // return [1,2,3]
+
+-Note: in ex the callback only uses the value of the array elem (val) but your callback can also inc agruments for index and array being acted on...
+
+
