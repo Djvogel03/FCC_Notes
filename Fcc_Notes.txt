@@ -908,3 +908,27 @@ console.log(oldArray); // return [1,2,3]
 -Note: in ex the callback only uses the value of the array elem (val) but your callback can also inc agruments for index and array being acted on...
 
 
+Condense Arrays w/ reduce
+-used to iterate through an array and condese into one value
+-to use, you pass in a callback whose args are an accumulator and the current value
+-the accumulator is like a total that 'reduce' keeps track of after each operation
+-current value is the next element in the array you're iterating through
+-'reduce' has optional second argument which can be used to set initial value of the accumulator
+
+ex> 
+
+var singleVal = array.reduce(function(previousVal, currentVal) {
+	return previousVal - currentVal;
+}, 0);
+
+
+Filter Arrays w/ filter
+-used to iterate thru array and filter elements where a given condition is true
+-'filter' is passed a callback fcn which takes the current value as an argument
+-any array elem for which callback returns 'true' will be kept and elements returning false, filtered out...
+
+ex>
+
+array = array.filter(function(val) {
+	return val !== 5;
+});
