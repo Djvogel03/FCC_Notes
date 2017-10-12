@@ -932,3 +932,82 @@ ex>
 array = array.filter(function(val) {
 	return val !== 5;
 });
+
+Sort Arrays w/ sort
+-used to sort vals in array alpha or numerically
+-'sort' actaully alters the arrayin place
+-'sort' can be passed a compare fcn as a callback
+	-the compare fcn shld return a neg # if 'a' shld be b4 'b' and a pos # if 'a' should be after 'b', or '0' if =
+-if no compare (callback) fcn passed, will convert the vals to strings and sort alpha...
+
+ex> 
+
+var array = [1, 12, 21, 2];
+array.sort(function(a,b) {
+	return a-b;
+});
+
+
+Reverse Arrays w/ reverse
+-can use to 'reverse' elem of an array
+-another method that alerts the array in place
+
+
+ex>
+
+var myArray = [1, 2, 3];
+myArray.reverse() // returns 3, 2, 1
+
+
+Concatenate Arrays w/ concat
+-used to merge the contents of 2 arrays into one
+-takes an array as an agrument & returns new array w/ the elements of this array concat onto the end
+
+ex> 
+
+newArray = oldArray.concat(otherArray);
+
+
+Split strings w/ split
+-used split string into array
+uses arg you pass as delimiter to determine split points
+
+Join strings w/ join
+-use to 'join' each elem of array into a string sep by whatever delimiter you provide as an argument
+
+ex>
+
+var veggies = ['celery', 'carrots', 'cukes'];
+var salad = veggies.join(' and ');
+
+console.log(salad); // 'celery and carrots and cukes'
+
+Algorithm Challenges.....
+
+1) Reverse a string...
+	-convert to array w/ .split
+	-reverse w/ .reverse()
+	-concant back into string w/ .join('')
+	>>  str = str.split('').reverse().join('');
+
+2) Factorialize a Number...
+
+function factorialize(num) {
+  if (num === 0) { return 1; }
+  return num * factorialize(num-1);
+}
+
+3) Check for Palindromes...
+  function palindrome(str) {
+  // Good luck!
+  console.log('original string = ' + str);
+  str = str.toLowerCase().replace(/\d|\W|\s|_/gi,'');
+  console.log('cleaned up string = ' + str);
+  revStr = str.split('').reverse().join('');
+  if (str == revStr){
+    return true;
+  }
+  return false;
+}
+
+4) Find Longest Word in a String...
