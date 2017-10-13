@@ -998,6 +998,7 @@ function factorialize(num) {
 }
 
 3) Check for Palindromes...
+  
   function palindrome(str) {
   // Good luck!
   console.log('original string = ' + str);
@@ -1011,3 +1012,46 @@ function factorialize(num) {
 }
 
 4) Find Longest Word in a String...
+
+function findLongestWord(str) {
+  wordArray = str.split(' ');
+  var longestWord = 0;
+  for (var i = 0; i < wordArray.length; i++) {
+    if (wordArray[i].length > longestWord) {
+      longestWord = wordArray[i].length; 
+  }
+  }
+  return longestWord;
+}
+
+5) Title Case a Sentence...
+
+function titleCase(str) {
+  var strList = [];
+  strList = str.split(' ');
+  console.log(strList);
+  for (var i = 0; i < strList.length; i++){
+    strList[i] = strList[i].toLowerCase();
+    strList[i] = strList[i].replace(strList[i].charAt(0),strList[i].charAt(0).toUpperCase());
+  }
+  str = strList.join(' ');
+  return str;
+}
+
+6) Return Largest Number in Arrays...
+
+function largestOfFour(arr) {
+  // You can do this!
+  var biggestNum = [];
+  for(var i = 0; i < arr.length; i++){
+    arr[i].sort(function(a,b){
+      return b-a;
+    });
+  }
+  for (var h = 0; h < arr.length; h++){
+    biggestNum.push(arr[h][0]);
+  }
+  return biggestNum;
+}
+
+
