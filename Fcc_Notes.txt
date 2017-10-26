@@ -1055,3 +1055,36 @@ function largestOfFour(arr) {
 }
 
 
+7) Confirm the ending...
+
+
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var tarLength = target.length;
+  if (str.substring(str.length - tarLength) == target){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+confirmEnding("Bastian", "n");
+
+8) Repeat a string repeat a string...
+
+
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+  if (num < 0) {
+    return '';
+  } else {
+    return str.repeat(num);
+  }
+  //return str;
+}
+
+repeatStringNumTimes("abc", 3);
+
+
+9) 
